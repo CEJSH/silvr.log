@@ -17,6 +17,8 @@
 }
 
 body {
+  height: 100vh;
+  overflow-y: auto;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

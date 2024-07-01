@@ -1,13 +1,19 @@
-export default function Home() {
+import MainPost from "@/components/MainPost";
+import PostsPage from "./posts/page";
+import AboutMe from "@/components/AboutMe";
+
+export default async function HomePage() {
   return (
-    <div className="h-full flex flex-col">
-      <div className="h-[40px]">최상위</div>
-      <div className="h-[1px] w-full bg-[#2f2f30] mb-[2px]" />
-      <div className="flex w-full h-full">
-        <div className="flex w-2/3">좌</div>
-        <div className="w-[1px] h-full bg-[#2f2f30]" />
-        <div className="flex w-1/3">우</div>
+    <section className="h-full w-full flex flex-col justify-between">
+      {/** 최상위 보여지는 부분 */}
+      <div className="px-[16px] w-full h-full flex justify-center mt-[46px] border-[#2f2f30] border-solid border-b-[1px] pb-[58px]">
+        <MainPost />
       </div>
-    </div>
+      <div className="px-[16px] w-full h-full flex flex-row md:flex-nowrap flex-wrap">
+        <PostsPage />
+        <div className="w-[0px] md:w-[1px] bg-[#2f2f30]" />
+        <AboutMe />
+      </div>
+    </section>
   );
 }
