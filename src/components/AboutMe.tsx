@@ -18,7 +18,7 @@ const AboutMe = () => {
           className="w-full flex flex-col gap-[24px]"
         >
           {/**사진 */}
-          <div className="hover:cursor-pointer w-full h-[240px] md:h-[180px] flex flex-row border border-solid border-[#2f2f30]">
+          <div className="cursor-pointer w-full h-[240px] md:h-[180px] flex flex-row border border-solid border-[#2f2f30]">
             <div className="!w-full flex justify-center overflow-hidden">
               <Image
                 src={`/images/me.jpg`}

@@ -11,12 +11,12 @@ export default function MainPost() {
   return (
     <section
       onClick={handleClick}
-      className="group hover:cursor-pointer relative flex flex-col border border-solid border-[#2f2f30] w-[700px]"
+      className="group cursor-pointer relative flex flex-col border border-solid border-[#2f2f30] w-[700px]"
     >
       <div className="w-full flex flex-row justify-center h-[240px] sm:h-[380px]">
         <div className="!w-full flex overflow-hidden">
           <Image
-            className="transition-all duration-100 ease-linear group-hover:scale-105"
+            className="w-full transition-all duration-100 ease-linear group-hover:scale-105"
             priority
             src={babe}
             alt="myloves"

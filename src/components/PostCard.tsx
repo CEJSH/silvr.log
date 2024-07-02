@@ -6,7 +6,7 @@ import Tag from "./Tag";
 import { Post } from "@/app/service/posts";
 
 const PostCard = ({
-  post: { id, title, date, description, tag },
+  post: { id, title, date, description, tag, path },
   carousel,
 }: {
   post: Post;
@@ -15,14 +15,14 @@ const PostCard = ({
   const router = useRouter();
   const pathname = usePathname();
   const handleClick = () => {
-    router.push(`/posts/${id}`);
+    router.push(`/posts/${path}`);
   };
   return (
     <article
       onClick={handleClick}
       className={clsx(
         "border border-solid border-[#2f2f30] overflow-hidden",
-        "group hover:cursor-pointer w-full h-[360px] md:h-[300px] flex sm:flex-row flex-col",
+        "group cursor-pointer w-full h-[360px] md:h-[300px] flex sm:flex-row flex-col",
         carousel && "!flex-col !h-[240px]"
       )}
     >

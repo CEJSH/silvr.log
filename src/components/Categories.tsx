@@ -3,28 +3,30 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 type Props = {
-  categories: { name: string; label: string }[];
+  selected: string;
+  categories: string[];
   onClick: (category: string) => void;
 };
 
-export default function Categories({ categories, onClick }: Props) {
+export default function Categories({ selected, categories, onClick }: Props) {
   const pathname = usePathname();
   return (
     <div
       className={clsx("w-full flex items-center tracking-wider text-[18px]")}
     >
       {pathname.includes("/posts") ? (
-        <div className="w-full flex flex-row flex-wrap gap-y-[4px] text-[18px] self-start justify-center mb-[20px]">
+        <div className="w-full flex flex-row flex-wrap gap-y-[8x] text-[18px] self-start justify-center mb-[20px]">
           {categories.map((cat, i) => {
             return (
               <div
                 key={i}
-                className="flex-none hover:cursor-pointer mr-[12px]"
+                className="hover:text-orange-300 flex-none cursor-pointer mr-[14px]"
                 onClick={() => {
-                  onClick(cat.name);
+                  onClick(cat);
                 }}
               >
-                {cat.label}
+                {cat === selected ? "(0) " : "( ) "}
+                {cat}
               </div>
             );
           })}

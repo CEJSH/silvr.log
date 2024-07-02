@@ -27,44 +27,15 @@ export default function FilterablePosts({ posts, categories }: Props) {
     }
   };
 
-  const all = selected === ALL_POSTS ? `( 0 ) ALL_POSTS` : `(   ) ALL_POSTS`;
-  const nextCat = selected === "next" ? `( 0 ) Next` : `(   ) Next`;
-  const reactCat = selected === "react" ? `( 0 ) React` : `(   ) React`;
-  const backendCat = selected === "backend" ? `( 0 ) Backend` : `(   ) Backend`;
-  const cssCat =
-    selected === "tailwind-css" ? `( 0 ) tailwind-css` : `(   ) tailwind-css`;
-
-  const categoryLabels: { [key: string]: string } = {
-    ALL_POSTS: all,
-    next: nextCat,
-    react: reactCat,
-    backend: backendCat,
-    "tailwind-css": cssCat,
-  };
-
-  const categoryList: { name: string; label: string }[] = [
-    ALL_POSTS,
-    ...categories,
-  ].reduce<{ name: string; label: string }[]>((acc, cat) => {
-    const label = categoryLabels[cat];
-    if (label) {
-      acc.push({
-        name: cat,
-        label: label,
-      });
-    }
-    return acc;
-  }, []);
-  // .map(
-  //   (cat) => ({
-  //     name: cat,
-  //     label: categoryLabels[cat] || all,
-  //   })
-  // );
+  const category = [ALL_POSTS, ...categories];
 
   return (
     <section>
-      <Categories categories={categoryList} onClick={handleButton} />
+      <Categories
+        selected={selected}
+        categories={category}
+        onClick={handleButton}
+      />
       <PostGrid>
         {selectedPosts.map((post, index) => (
           <PostCard key={index} post={post} />

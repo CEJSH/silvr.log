@@ -5,6 +5,7 @@
     "title": "오늘의 목표",
     "description": "블로그 끝내기",
     "image": "play.jpeg",
+    "path": "goal",
     "tag": ["frontend", "next", "styled-components"]
   },
   {
@@ -13,6 +14,7 @@
     "title": "wtg리팩토링",
     "description": "ㅠㅠㅠㅠ",
     "image": "socute.jpeg",
+    "path": "refactor",
     "tag": ["frontend", "react"]
   },
   {
@@ -21,6 +23,7 @@
     "title": "it's rainy tomorrow",
     "description": "then let's not go to gym",
     "image": "choco.jpeg",
+    "path": "react-query",
     "tag": ["backend", "tailwind-css"]
   },
   {
@@ -29,6 +32,7 @@
     "title": "monitoring",
     "description": "틈틈히...",
     "image": "play.jpeg",
+    "path": "react-query2",
     "tag": ["frontend", "next", "styled-components"]
   },
   {
@@ -37,6 +41,7 @@
     "title": "Resume",
     "description": "아쟈쟈쟈쟈쟈쟈쟈",
     "image": "socute.jpeg",
+    "path": "react-query3",
     "tag": ["frontend", "react"]
   },
   {
@@ -45,6 +50,7 @@
     "title": "스터디 책 읽어야대",
     "description": "one day left!",
     "image": "choco.jpeg",
+    "path": "react-query4",
     "tag": ["frontend", "tailwind-css"]
   },
   {
@@ -53,6 +59,7 @@
     "title": "벌써 7월이여..",
     "description": "ㅎㅎ",
     "image": "play.jpeg",
+    "path": "react-query5",
     "tag": ["frontend", "next", "styled-components"]
   },
   {
@@ -61,6 +68,7 @@
     "title": "정말 빨리간다 올해",
     "description": "아쟈쟈쟈쟞",
     "image": "socute.jpeg",
+    "path": "react-query6",
     "tag": ["frontend", "react"]
   },
   {
@@ -69,6 +77,7 @@
     "title": "간식 줄여",
     "description": "어케 줄이지",
     "image": "choco.jpeg",
+    "path": "react-query_important_defaults",
     "tag": ["frontend", "tailwind-css"]
   }
 ]
