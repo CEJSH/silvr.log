@@ -7,7 +7,9 @@ export default function PostLayout({
 }>) {
   return (
     <div className="flex flex-col w-full justify-center">
-      {children}
+      <article className="w-full h-full flex justify-center">
+        {children}
+      </article>
       <div className="w-[700px] mt-[54px] self-center">
         <CarouselPosts />
       </div>

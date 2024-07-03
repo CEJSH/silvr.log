@@ -6,6 +6,7 @@
     "description": "블로그 끝내기",
     "image": "play.jpeg",
     "path": "goal",
+    "featured": false,
     "tag": ["frontend", "next", "styled-components"]
   },
   {
@@ -15,6 +16,7 @@
     "description": "ㅠㅠㅠㅠ",
     "image": "socute.jpeg",
     "path": "refactor",
+    "featured": false,
     "tag": ["frontend", "react"]
   },
   {
@@ -24,6 +26,7 @@
     "description": "then let's not go to gym",
     "image": "choco.jpeg",
     "path": "react-query",
+    "featured": false,
     "tag": ["backend", "tailwind-css"]
   },
   {
@@ -33,6 +36,7 @@
     "description": "틈틈히...",
     "image": "play.jpeg",
     "path": "react-query2",
+    "featured": false,
     "tag": ["frontend", "next", "styled-components"]
   },
   {
@@ -42,6 +46,7 @@
     "description": "아쟈쟈쟈쟈쟈쟈쟈",
     "image": "socute.jpeg",
     "path": "react-query3",
+    "featured": true,
     "tag": ["frontend", "react"]
   },
   {
@@ -51,6 +56,8 @@
     "description": "one day left!",
     "image": "choco.jpeg",
     "path": "react-query4",
+    "featured": true,
+
     "tag": ["frontend", "tailwind-css"]
   },
   {
@@ -60,6 +67,7 @@
     "description": "ㅎㅎ",
     "image": "play.jpeg",
     "path": "react-query5",
+    "featured": true,
     "tag": ["frontend", "next", "styled-components"]
   },
   {
@@ -69,15 +77,78 @@
     "description": "아쟈쟈쟈쟞",
     "image": "socute.jpeg",
     "path": "react-query6",
+    "featured": true,
     "tag": ["frontend", "react"]
+  },
+
+  {
+    "id": "10",
+    "date": "20240703",
+    "title": "블로그 진짜 끝",
+    "description": "포폴 어떻게 넣을지 고민해보기",
+    "image": "choco.jpeg",
+    "path": "react-query7",
+    "featured": true,
+    "tag": ["frontend", "next", "react-query", "tailwind-css"]
+  },
+  {
+    "id": "11",
+    "date": "20240703",
+    "title": "week-1",
+    "description": "완료하기",
+    "image": "choco.jpeg",
+    "path": "react-query8",
+    "featured": true,
+    "tag": ["nest", "mutex"]
+  },
+  {
+    "id": "12",
+    "date": "20240703",
+    "title": "week3 start",
+    "description": "week2제끼고 스타트",
+    "image": "choco.jpeg",
+    "path": "react-query9",
+    "featured": true,
+    "tag": ["nest", "typescript"]
+  },
+  {
+    "id": "14",
+    "date": "20240703",
+    "title": "근력+유산소",
+    "description": "근력 5분만 더.. 해보자",
+    "image": "choco.jpeg",
+    "featured": true,
+    "path": "react-query11",
+    "tag": []
+  },
+  {
+    "id": "15",
+    "date": "20240703",
+    "title": "책 3챕터",
+    "description": "읽구 정리하기",
+    "image": "choco.jpeg",
+    "featured": true,
+    "path": "react-query12",
+    "tag": ["cs"]
+  },
+  {
+    "id": "16",
+    "date": "20240704",
+    "title": "이찬영",
+    "description": "사랑해",
+    "image": "choco.jpeg",
+    "path": "react-query10",
+    "featured": false,
+    "tag": ["frontend", "tailwind-css"]
   },
   {
     "id": "9",
     "date": "20240704",
-    "title": "간식 줄여",
-    "description": "어케 줄이지",
+    "title": "wtg-refactor",
+    "description": "화이팅!!!",
     "image": "choco.jpeg",
-    "path": "react-query_important_defaults",
-    "tag": ["frontend", "tailwind-css"]
+    "path": "react-query13",
+    "featured": false,
+    "tag": ["react-query", "next"]
   }
 ]

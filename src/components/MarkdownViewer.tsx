@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 import Markdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -29,6 +30,15 @@ export default function MarkdownViewer({ content }: { content: string }) {
             </code>
           );
         },
+        img: (image) => (
+          <Image
+            className="w-full max-h-60 object-cover"
+            src={image.src || ""}
+            alt={image.alt || ""}
+            width={500}
+            height={350}
+          />
+        ),
       }}
     >
       {content}

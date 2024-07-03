@@ -10,8 +10,8 @@ const dosis = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Silvr.log",
-  description: "eunjae's blog",
+  title: { default: "Silvr.log", template: "Silvr.log | %s" },
+  description: "software engineer eunjae's blog",
 };
 
 export default function RootLayout({

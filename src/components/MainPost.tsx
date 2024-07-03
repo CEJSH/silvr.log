@@ -28,7 +28,7 @@ export default function MainPost() {
         <div className="text-[#666666] text-[10px]">date</div>
         <div className="flex flex-col gap-[10px] sm:gap-[14px]">
           <div className="group-hover:text-orange-400 transition-all duration-100 ease-linear text-[17px] font-[700]">
-            내일은 화요일입니다. 벌써 6월이 끝났네요. 일년 빠르다
+            Today is Wednesday. 찬영이는 치코리타야!
           </div>
           <div className="text-[#666666] text-[12px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
