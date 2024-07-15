@@ -4,14 +4,13 @@ import FilterablePosts from "@/components/FilterablePosts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "All Posts",
-  description: "blog posts related to development",
+  title: "All NonTech Posts",
+  description: "blog posts not related to tech",
 };
 
 export default async function PostsPage() {
-  const posts = await getAllPosts(PostType.TECH);
+  const posts = await getAllPosts(PostType.NONTECH);
   const categories = [...new Set(posts.flatMap((post) => post.tag))];
-  // console.log(categories);
 
   return (
     <div className="w-full flex justify-center">

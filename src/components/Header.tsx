@@ -23,11 +23,15 @@ export default function Header() {
         </span>
         <div className="h-full w-[1px] bg-[#2f2f30]" />
         <span>
-          <Link href="/posts">Posts</Link>
+          <Link href="/posts">
+            {`Posts`} <span className="font-[600]">{`[tech]`}</span>
+          </Link>
         </span>
         <div className="h-full w-[1px] bg-[#2f2f30]" />
         <span>
-          <Link href="/album">Album</Link>
+          <Link href="/posts-non-tech">
+            {`Posts `} <span className="font-[600]">{`[non_tech]`}</span>
+          </Link>
         </span>
         <div className="h-full w-[1px] bg-[#2f2f30]" />
         <span>

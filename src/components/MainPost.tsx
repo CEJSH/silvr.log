@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function MainPost() {
   const router = useRouter();
   const handleClick = () => {
-    router.push(`/posts/${1}`);
+    router.push(`/posts/react-query10`);
   };
   return (
     <section

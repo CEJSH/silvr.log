@@ -15,8 +15,13 @@ const PostCard = ({
   const router = useRouter();
   const pathname = usePathname();
   const handleClick = () => {
-    router.push(`/posts/${path}`);
+    if (pathname.endsWith("posts")) {
+      router.push(`/posts/${path}`);
+    } else {
+      router.push(`/posts-non-tech/${path}`);
+    }
   };
+
   return (
     <article
       onClick={handleClick}

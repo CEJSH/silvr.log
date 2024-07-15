@@ -84,12 +84,12 @@
   {
     "id": "10",
     "date": "20240703",
-    "title": "블로그 진짜 끝",
-    "description": "포폴 어떻게 넣을지 고민해보기",
+    "title": "[nest.js] auto mocking",
+    "description": "nest.js auto mocking",
     "image": "choco.jpeg",
-    "path": "react-query7",
+    "path": "auto-mocking",
     "featured": true,
-    "tag": ["frontend", "next", "react-query", "tailwind-css"]
+    "tag": ["nest", "typescript"]
   },
   {
     "id": "11",

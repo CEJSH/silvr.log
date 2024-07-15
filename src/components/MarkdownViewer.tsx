@@ -1,4 +1,6 @@
 "use client";
+
+import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 import Markdown from "react-markdown";
@@ -9,7 +11,7 @@ import remarkGfm from "remark-gfm";
 export default function MarkdownViewer({ content }: { content: string }) {
   return (
     <Markdown
-      className="prose lg:prose-lg !text-[#3b3b3b]"
+      className="prose lg:prose-lg !text-[#3b3b3b] text-[14px]"
       remarkPlugins={[remarkGfm]}
       components={{
         code(props) {
@@ -28,6 +30,14 @@ export default function MarkdownViewer({ content }: { content: string }) {
             <code {...rest} className={className}>
               {children}
             </code>
+          );
+        },
+        p: (p) => {
+          const { children, ref, className, node, ...rest } = p;
+          return (
+            <p className={clsx(className, "text-[17px] leading-1.53")}>
+              {children}
+            </p>
           );
         },
         img: (image) => (

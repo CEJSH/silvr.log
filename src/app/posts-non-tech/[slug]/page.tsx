@@ -19,7 +19,7 @@ type Props = {
 export async function generateMetadata({
   params: { slug },
 }: Props): Promise<Metadata> {
-  const { title, description } = await getPostData(slug, PostType.TECH);
+  const { title, description } = await getPostData(slug, PostType.NONTECH);
   return {
     title,
     description,
@@ -27,10 +27,10 @@ export async function generateMetadata({
 }
 
 export default async function PostPage({ params: { slug } }: Props) {
-  const post = await getPostData(slug, PostType.TECH);
+  const post = await getPostData(slug, PostType.NONTECH);
   const { id, title, next, prev } = post;
   if (!title) {
-    redirect("/posts");
+    redirect("/posts-non-tech");
     // notFound();
   }
   return (
@@ -52,7 +52,7 @@ export default async function PostPage({ params: { slug } }: Props) {
 
 // 특정 페이지들을 미리 만들어 둘 수 있게 해줄 거임 (SSG)
 export async function generateStaticParams() {
-  const posts = await getFeaturedPosts(PostType.TECH);
+  const posts = await getFeaturedPosts(PostType.NONTECH);
   return posts.map((post) => ({
     slug: post.path,
   }));
