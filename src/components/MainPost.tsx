@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
 import babe from "../../public/images/0.jpg";
+import computer from "../../public/images/23.jpg";
 import React from "react";
 import { useRouter } from "next/navigation";
 export default function MainPost() {
   const router = useRouter();
   const handleClick = () => {
-    router.push(`/posts/react-query10`);
+    router.push(`/posts-non-tech/how-i-got-into-programming`);
   };
   return (
     <section
@@ -18,22 +19,21 @@ export default function MainPost() {
           <Image
             className="w-full transition-all duration-100 ease-linear group-hover:scale-105"
             priority
-            src={babe}
-            alt="myloves"
+            src={computer}
+            alt="image"
             style={{ objectFit: "cover" }}
           />
         </div>
       </div>
       <div className="p-[14px] sm:p-[16px] flex flex-col gap-[8px] sm:gap-[12px]">
-        <div className="text-[#666666] text-[10px]">date</div>
+        <div className="text-[#666666] text-[10px]">2024 00 00 </div>
         <div className="flex flex-col gap-[10px] sm:gap-[14px]">
           <div className="group-hover:text-orange-400 transition-all duration-100 ease-linear text-[17px] font-[700]">
-            Today is Wednesday. 찬영이는 치코리타야!
+            How I Got Into Programming
           </div>
           <div className="text-[#666666] text-[12px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            pariatur, ipsam, molestiae, eius odio quasi praesentium amet dolorem
-            blanditiis illo reprehenderit omnis porro dolore quaerat
+            모 개발자님의 유년시절 이야기를 담은 글을 보고 인상이 깊어 쓰는 첫
+            블로그 글입니다.
           </div>
         </div>
       </div>

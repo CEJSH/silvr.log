@@ -14,11 +14,12 @@ const PostCard = ({
 }) => {
   const router = useRouter();
   const pathname = usePathname();
+  // errorhandling 기록하기 ->
   const handleClick = () => {
-    if (pathname.endsWith("posts")) {
-      router.push(`/posts/${path}`);
-    } else {
+    if (pathname.endsWith("/posts-non-tech")) {
       router.push(`/posts-non-tech/${path}`);
+    } else {
+      router.push(`/posts/${path}`);
     }
   };
 

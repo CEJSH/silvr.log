@@ -36,6 +36,7 @@ export async function getFeaturedPosts(postType: PostType): Promise<Post[]> {
 export const getAllPosts = cache(async (postType: PostType) => {
   console.log("getAllTechPosts");
   const folderName = postType === PostType.TECH ? "data" : "data/non_tech";
+  console.log(folderName);
   const filePath = path.join(process.cwd(), folderName, "posts.json");
   return fs
     .readFile(filePath, "utf-8")

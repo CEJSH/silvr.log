@@ -1,154 +1,75 @@
 [
   {
-    "id": "1",
-    "date": "20240701",
-    "title": "오늘의 목표",
-    "description": "블로그 끝내기",
+    "id": "22",
+    "date": "2024",
+    "title": "함수 선언식과 함수 표현식의 차이점",
+    "description": "",
     "image": "play.jpeg",
-    "path": "goal",
+    "path": "function",
     "featured": false,
-    "tag": ["frontend", "next", "styled-components"]
+    "tag": ["javascript"]
   },
   {
-    "id": "2",
-    "date": "20240702",
-    "title": "wtg리팩토링",
-    "description": "ㅠㅠㅠㅠ",
+    "id": "22",
+    "date": "2024",
+    "title": "화살표 함수의 특징과 차이점",
+    "description": "",
     "image": "socute.jpeg",
-    "path": "refactor",
+    "path": "arrow-function",
     "featured": false,
-    "tag": ["frontend", "react"]
+    "tag": ["javascript"]
   },
   {
-    "id": "3",
-    "date": "20240702",
-    "title": "it's rainy tomorrow",
-    "description": "then let's not go to gym",
+    "id": "22",
+    "date": "2024",
+    "title": "자바스크립트 비동기 코드 처리",
+    "description": "이벤트 루프 이해하기",
     "image": "choco.jpeg",
-    "path": "react-query",
+    "path": "event-loop",
     "featured": false,
-    "tag": ["backend", "tailwind-css"]
-  },
-  {
-    "id": "4",
-    "date": "20240702",
-    "title": "monitoring",
-    "description": "틈틈히...",
-    "image": "play.jpeg",
-    "path": "react-query2",
-    "featured": false,
-    "tag": ["frontend", "next", "styled-components"]
-  },
-  {
-    "id": "5",
-    "date": "20240703",
-    "title": "Resume",
-    "description": "아쟈쟈쟈쟈쟈쟈쟈",
-    "image": "socute.jpeg",
-    "path": "react-query3",
-    "featured": true,
-    "tag": ["frontend", "react"]
-  },
-  {
-    "id": "6",
-    "date": "20240703",
-    "title": "스터디 책 읽어야대",
-    "description": "one day left!",
-    "image": "choco.jpeg",
-    "path": "react-query4",
-    "featured": true,
-
-    "tag": ["frontend", "tailwind-css"]
-  },
-  {
-    "id": "7",
-    "date": "20240703",
-    "title": "벌써 7월이여..",
-    "description": "ㅎㅎ",
-    "image": "play.jpeg",
-    "path": "react-query5",
-    "featured": true,
-    "tag": ["frontend", "next", "styled-components"]
-  },
-  {
-    "id": "8",
-    "date": "20240703",
-    "title": "정말 빨리간다 올해",
-    "description": "아쟈쟈쟈쟞",
-    "image": "socute.jpeg",
-    "path": "react-query6",
-    "featured": true,
-    "tag": ["frontend", "react"]
+    "tag": ["javascript"]
   },
 
   {
-    "id": "10",
-    "date": "20240703",
-    "title": "[nest.js] auto mocking",
-    "description": "nest.js auto mocking",
-    "image": "choco.jpeg",
-    "path": "auto-mocking",
+    "id": "22",
+    "date": "2024",
+    "title": "클로저",
+    "description": "",
+    "image": "socute.jpeg",
+    "path": "closer",
     "featured": true,
-    "tag": ["nest", "typescript"]
+    "tag": ["frontend", "react", "javascript"]
   },
   {
-    "id": "11",
-    "date": "20240703",
-    "title": "week-1",
-    "description": "완료하기",
+    "id": "22",
+    "date": "2024",
+    "title": "Array 프로토타입의 메서드",
+    "description": "map, filter, reduce, forEach",
     "image": "choco.jpeg",
-    "path": "react-query8",
+    "path": "array-method",
     "featured": true,
-    "tag": ["nest", "mutex"]
+
+    "tag": ["frontend", "javascript"]
   },
+
   {
-    "id": "12",
-    "date": "20240703",
-    "title": "week3 start",
-    "description": "week2제끼고 스타트",
+    "id": "22",
+    "date": "2024",
+    "title": "좋은 함수 작성법",
+    "description": "주의사항과 팁",
     "image": "choco.jpeg",
-    "path": "react-query9",
+    "path": "good-function",
     "featured": true,
-    "tag": ["nest", "typescript"]
+    "tag": ["javascript"]
   },
   {
-    "id": "14",
-    "date": "20240703",
-    "title": "근력+유산소",
-    "description": "근력 5분만 더.. 해보자",
+    "id": "22",
+    "date": "2024",
+    "title": "즉시 실행 함수 (IIFE: Immediately Invoked Function Expression)",
+    "description": "",
     "image": "choco.jpeg",
+    "path": "immediately-invoked-function",
     "featured": true,
-    "path": "react-query11",
-    "tag": []
-  },
-  {
-    "id": "15",
-    "date": "20240703",
-    "title": "책 3챕터",
-    "description": "읽구 정리하기",
-    "image": "choco.jpeg",
-    "featured": true,
-    "path": "react-query12",
-    "tag": ["cs"]
-  },
-  {
-    "id": "16",
-    "date": "20240704",
-    "title": "이찬영",
-    "description": "사랑해",
-    "image": "choco.jpeg",
-    "path": "react-query10",
-    "featured": false,
-    "tag": ["frontend", "tailwind-css"]
-  },
-  {
-    "id": "9",
-    "date": "20240704",
-    "title": "wtg-refactor",
-    "description": "화이팅!!!",
-    "image": "choco.jpeg",
-    "path": "react-query13",
-    "featured": false,
-    "tag": ["react-query", "next"]
+    "tag": ["javascript"]
   }
 ]
