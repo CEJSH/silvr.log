@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={clsx(
           dosis.className,
-          "flex flex-col max-w-screen-2xl mx-auto w-full bg-white"
+          "flex flex-col max-w-screen-2xl mx-auto w-full bg-white text-black"
         )}
       >
         <Header />
