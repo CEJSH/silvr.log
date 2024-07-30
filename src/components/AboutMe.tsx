@@ -6,7 +6,7 @@ const AboutMe = () => {
   const router = useRouter();
 
   return (
-    <div className="mx-auto w-[300px] sm:w-[500px] px-[16px] md:px-[110px] flex justify-center">
+    <div className="mx-auto w-[300px] sm:w-[500px] px-[16px] md:px-[80px] flex justify-center">
       <div className="flex flex-col pt-[32px]">
         <div className="flex items-center mb-[20px] sm:mb-[36px]">
           <div className="tracking-wider text-[18px]">ABOUT ME</div>
@@ -26,6 +26,7 @@ const AboutMe = () => {
                 width={300}
                 height={200}
                 style={{ objectFit: "cover" }}
+                className="w-full h-full"
               />
             </div>
           </div>

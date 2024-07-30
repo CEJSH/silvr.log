@@ -9,7 +9,7 @@ export default async function HomePage() {
       <div className="px-[16px] w-full h-full flex justify-center mt-[46px] border-[#2f2f30] border-solid border-b-[1px] pb-[58px]">
         <MainPost />
       </div>
-      <div className="px-[16px] w-full h-full flex flex-row md:flex-nowrap flex-wrap">
+      <div className="px-[16px] w-full h-full flex flex-row xl:flex-nowrap flex-wrap">
         <PostsPage />
         <div className="w-[0px] md:w-[1px] bg-[#2f2f30]" />
         <AboutMe />
