@@ -7,7 +7,7 @@ export default function PostContent({ post }: { post: PostData }) {
   return (
     <>
       <section className="p-1">
-        <h1 className="text-[#3b3b3b] text-[48px] font-[700] mt-[20px]">
+        <h1 className="text-[#3b3b3b] text-[36px] sm:text-[48px] font-[700] mt-[20px]">
           {title}
         </h1>
         <div className="w-full flex flex-row mt-[20px]">
@@ -22,14 +22,14 @@ export default function PostContent({ post }: { post: PostData }) {
             );
           })}
         </div>
-        <section className="w-full mt-[20px]">
+        <section className="w-full sm:mt-[20px]">
           <div className="text-[#8B95A1] text-[14px]">{`${date.slice(
             0,
             4
           )}년 ${date.slice(4, 6)}월 ${date.slice(6, 8)}일`}</div>
         </section>
       </section>
-      <div className="text-[#333d4b] mt-[54px] w-full flex flex-col p-1">
+      <div className="text-[#333d4b] mt-[20px] sm:mt-[54px] w-full flex flex-col p-1">
         <MarkdownViewer content={content} />
       </div>
     </>

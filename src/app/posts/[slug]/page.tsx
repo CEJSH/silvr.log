@@ -1,9 +1,4 @@
-import {
-  getFeaturedPosts,
-  getPost,
-  getPostData,
-  PostType,
-} from "@/app/service/posts";
+import { getFeaturedPosts, getPostData, PostType } from "@/app/service/posts";
 import PostContent from "@/components/PostContent";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -34,7 +29,7 @@ export default async function PostPage({ params: { slug } }: Props) {
     // notFound();
   }
   return (
-    <section className="w-[500px] md:w-[700px]">
+    <section className="w-full sm:w-[500px] md:w-[700px] px-2">
       <div className="rounded-[12px] h-[357px] mt-[28px] flex justify-start overflow-hidden">
         <Image
           className="h-full"

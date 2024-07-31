@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="flex flex-col justify-between items-center py-[8px]">
+    <header className="w-full flex flex-col justify-between items-center py-[8px]">
       <div className="flex items-center">
         <Link
           href="/"
@@ -14,7 +14,7 @@ export default function Header() {
       </div>
       <nav
         className={
-          "text-[12px] flex items-center mt-[16px] gap-[24px] xs:gap-[36px] sm:gap-[54px] justify-center w-full h-[34px] border border-[#2f2f30] border-solid border-y-1 border-x-0"
+          "text-[12px] flex items-center mt-[16px] gap-[8px] xs:gap-[28px] sm:gap-[40px] md:gap-[54px] justify-center w-full h-[34px] border border-[#2f2f30] border-solid border-y-1 border-x-0"
         }
       >
         <div className="h-full w-[1px] bg-[#2f2f30]" />

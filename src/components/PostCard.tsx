@@ -29,13 +29,13 @@ const PostCard = ({
       className={clsx(
         "border border-solid border-[#2f2f30] overflow-hidden",
         "group cursor-pointer w-full h-[360px] md:h-[300px] flex sm:flex-row flex-col",
-        carousel && "!flex-col !h-[240px]"
+        carousel && "!flex-col !h-[140px] md:!h-[240px]"
       )}
     >
       <div
         className={clsx(
           "!w-full flex justify-start overflow-hidden",
-          carousel && "h-[200px]"
+          carousel && "!h-[160px] md:!h-[200px]"
         )}
       >
         <Image
@@ -52,7 +52,7 @@ const PostCard = ({
       <div
         className={clsx(
           "w-full p-[14px] sm:p-[24px] flex flex-col gap-[6px] justify-between",
-          carousel && "!p-[14px]"
+          carousel && "!p-[8px] sm:!p-[14px]"
         )}
       >
         <div
@@ -74,14 +74,16 @@ const PostCard = ({
                   ? "text-[24px] font-[500]"
                   : "text-[18px] font-[600]",
                 carousel && "!text-[14px] font-[600]",
-                "group-hover:text-orange-400 transition-all duration-100 ease-linear"
+                "group-hover:text-orange-400 transition-all duration-100 ease-linear text-ellipsis overflow-hidden"
               )}
             >
               {title}
             </div>
-            <div className="text-[#666666] text-[12px] truncate">
-              {description}
-            </div>
+            {!carousel && (
+              <div className="text-[#666666] text-[12px] truncate">
+                {description}
+              </div>
+            )}
           </div>
         </div>
         {!carousel && (
