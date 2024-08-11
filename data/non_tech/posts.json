@@ -8,5 +8,15 @@
     "path": "how-i-got-into-programming",
     "featured": true,
     "tag": ["review"]
+  },
+  {
+    "id": "24",
+    "date": "20240802",
+    "title": "Interview Review Which Was Peculiar",
+    "description": "덕분에 의지를 다질 수 있었습니다 Nice",
+    "image": "puuu.jpeg",
+    "path": "interview-review-which-was-peculiar",
+    "featured": false,
+    "tag": ["review"]
   }
 ]
