@@ -1,4 +1,4 @@
-import AboutMe from "@/components/AboutMe";
+import AboutMe from "@/components/shared/AboutMe";
 import { Metadata } from "next";
 import React from "react";
 

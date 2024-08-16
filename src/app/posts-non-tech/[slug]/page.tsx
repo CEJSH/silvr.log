@@ -1,5 +1,5 @@
 import { getFeaturedPosts, getPostData, PostType } from "@/app/service/posts";
-import PostContent from "@/components/PostContent";
+import PostContent from "@/components/shared/PostContent";
 import { Metadata } from "next";
 import Image from "next/image";
 import { redirect } from "next/navigation";

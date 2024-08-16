@@ -1,6 +1,6 @@
 import { getAllPosts, PostType } from "@/app/service/posts";
 import PostCard from "./PostCard";
-import MultiCarousel from "./MultiCarousel";
+import MultiCarousel from "../MultiCarousel";
 export default async function CarouselPosts() {
   const posts = await getAllPosts(PostType.TECH);
   return (

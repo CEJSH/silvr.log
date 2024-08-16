@@ -1,4 +1,4 @@
-import CarouselPosts from "@/components/Carousel";
+import CarouselPosts from "@/components/shared/Carousel";
 
 export default function PostLayout({
   children,

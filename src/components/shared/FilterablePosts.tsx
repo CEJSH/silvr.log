@@ -1,9 +1,9 @@
 "use client";
 import { Post } from "@/app/service/posts";
 import React, { useState } from "react";
-import PostGrid from "./PostGrid";
+import PostGrid from "../PostGrid";
 import PostCard from "./PostCard";
-import Categories from "./Categories";
+import Categories from "../Categories";
 
 type Props = {
   posts: Post[];

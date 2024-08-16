@@ -1,5 +1,5 @@
 import React from "react";
-import MarkdownViewer from "./MarkdownViewer";
+import MarkdownViewer from "../MarkdownViewer";
 import { PostData } from "@/app/service/posts";
 
 export default function PostContent({ post }: { post: PostData }) {

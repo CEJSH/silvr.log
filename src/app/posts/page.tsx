@@ -1,7 +1,7 @@
 import React from "react";
 import { getAllPosts, PostType } from "../service/posts";
-import FilterablePosts from "@/components/FilterablePosts";
 import { Metadata } from "next";
+import FilterablePosts from "@/components/shared/FilterablePosts";
 
 export const metadata: Metadata = {
   title: "All Posts",

@@ -2,7 +2,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import Tag from "./Tag";
+import Tag from "../Tag";
 import { Post } from "@/app/service/posts";
 
 const PostCard = ({

@@ -1,6 +1,6 @@
 import MainPost from "@/components/MainPost";
 import PostsPage from "./posts/page";
-import AboutMe from "@/components/AboutMe";
+import AboutMe from "@/components/shared/AboutMe";
 
 export default async function HomePage() {
   return (
