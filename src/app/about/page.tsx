@@ -9,8 +9,10 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="w-full flex justify-center">
+    <div className={aboutPageStyle}>
       <AboutMe />
     </div>
   );
 }
+
+const aboutPageStyle = "w-full flex justify-center";

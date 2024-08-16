@@ -22,6 +22,9 @@ const PostCard = ({
       router.push(`/posts/${path}`);
     }
   };
+  const titleFont = pathname.startsWith("/posts")
+    ? "text-[24px] font-[500]"
+    : "text-[18px] font-[600]";
 
   return (
     <article
@@ -54,9 +57,7 @@ const PostCard = ({
           <div className={clsx(mainInfoRowStyle, carousel && "gap-[4px]")}>
             <div
               className={clsx(
-                pathname.startsWith("/posts")
-                  ? "text-[24px] font-[500]"
-                  : "text-[18px] font-[600]",
+                titleFont,
                 carousel && "!text-[14px] font-[600]",
                 titleStyle
               )}

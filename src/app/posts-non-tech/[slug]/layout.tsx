@@ -6,13 +6,16 @@ export default function PostLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col w-full justify-center">
-      <article className="w-full h-full flex justify-center">
-        {children}
-      </article>
-      <div className="w-full lg:w-[700px] mt-[54px] self-center px-2">
+    <div className={layoutStyle}>
+      <article className={pageStyle}>{children}</article>
+      <div className={carouselWrapperStyle}>
         <CarouselPosts />
       </div>
     </div>
   );
 }
+const carouselWrapperStyle = "w-full lg:w-[700px] mt-[54px] self-center px-2";
+
+const pageStyle = "w-full h-full flex justify-center";
+
+const layoutStyle = "flex flex-col w-full justify-center";
