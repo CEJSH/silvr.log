@@ -6,20 +6,20 @@ const AboutMe = () => {
   const router = useRouter();
 
   return (
-    <div className="mx-auto w-[300px] sm:w-[500px] px-[16px] md:px-[80px] flex justify-center">
-      <div className="flex flex-col pt-[32px]">
-        <div className="flex items-center mb-[20px] sm:mb-[36px]">
-          <div className="tracking-wider text-[18px]">ABOUT ME</div>
+    <div className={aboutMeStyle}>
+      <div className={aboutMeSectionStyle}>
+        <div className={titleRowStyle}>
+          <div className={titleStyle}>ABOUT ME</div>
         </div>
         <div
           onClick={() => {
             router.push("/about");
           }}
-          className="w-full flex flex-col gap-[24px]"
+          className={introSectionSTyle}
         >
           {/**사진 */}
-          <div className="cursor-pointer w-full h-[240px] md:h-[180px] flex flex-row border border-solid border-[#2f2f30]">
-            <div className="!w-full flex justify-center overflow-hidden">
+          <div className={imageContainerStyle}>
+            <div className={imageRowStyle}>
               <Image
                 src={`/images/me.jpg`}
                 alt={`na`}
@@ -41,7 +41,7 @@ const AboutMe = () => {
             성장하는 것을 지향합니다.
           </div>
           {/**줄 */}
-          <div className="w-full h-[1px] bg-[#2f2f30]"></div>
+          <div className={lineStyle}></div>
         </div>
       </div>
     </div>
@@ -49,3 +49,21 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
+const imageRowStyle = "!w-full flex justify-center overflow-hidden";
+
+const imageContainerStyle =
+  "cursor-pointer w-full h-[240px] md:h-[180px] flex flex-row border border-solid border-[#2f2f30]";
+
+const introSectionSTyle = "w-full flex flex-col gap-[24px]";
+
+const titleStyle = "tracking-wider text-[18px]";
+
+const titleRowStyle = "flex items-center mb-[20px] sm:mb-[36px]";
+
+const aboutMeSectionStyle = "flex flex-col pt-[32px]";
+
+const aboutMeStyle =
+  "mx-auto w-[300px] sm:w-[500px] px-[16px] md:px-[80px] flex justify-center";
+
+const lineStyle = "w-full h-[1px] bg-[#2f2f30]";

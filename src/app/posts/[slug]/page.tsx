@@ -26,11 +26,10 @@ export default async function PostPage({ params: { slug } }: Props) {
   const { id, title, next, prev } = post;
   if (!title) {
     redirect("/posts");
-    // notFound();
   }
   return (
-    <section className="w-full sm:w-[500px] md:w-[700px] px-2">
-      <div className="rounded-[12px] h-[357px] mt-[28px] flex justify-start overflow-hidden">
+    <section className={sectionStyle}>
+      <div className={imageRowStyle}>
         <Image
           className="h-full"
           src={`/images/${id}.jpg`}
@@ -52,3 +51,8 @@ export async function generateStaticParams() {
     slug: post.path,
   }));
 }
+
+const imageRowStyle =
+  "rounded-[12px] h-[357px] mt-[28px] flex justify-start overflow-hidden";
+
+const sectionStyle = "w-full sm:w-[500px] md:w-[700px] px-2";
