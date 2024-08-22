@@ -11,6 +11,7 @@ type Props = {
 };
 
 const ALL_POSTS = "ALL_POSTS";
+
 export default function FilterablePosts({ posts, categories }: Props) {
   const [selected, setSelected] = useState<string>(ALL_POSTS);
 

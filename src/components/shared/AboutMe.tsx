@@ -1,22 +1,14 @@
-"use client";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const AboutMe = () => {
-  const router = useRouter();
-
   return (
     <div className={aboutMeStyle}>
       <div className={aboutMeSectionStyle}>
         <div className={titleRowStyle}>
           <div className={titleStyle}>ABOUT ME</div>
         </div>
-        <div
-          onClick={() => {
-            router.push("/about");
-          }}
-          className={introSectionSTyle}
-        >
+        <Link href={"/about"} className={introSectionSTyle}>
           {/**사진 */}
           <div className={imageContainerStyle}>
             <div className={imageRowStyle}>
@@ -42,7 +34,7 @@ const AboutMe = () => {
           </div>
           {/**줄 */}
           <div className={lineStyle}></div>
-        </div>
+        </Link>
       </div>
     </div>
   );

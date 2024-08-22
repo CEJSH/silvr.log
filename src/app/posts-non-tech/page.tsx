@@ -1,4 +1,3 @@
-import React from "react";
 import { getAllPosts, PostType } from "../service/posts";
 import { Metadata } from "next";
 import FilterablePosts from "@/components/shared/FilterablePosts";
@@ -7,15 +6,16 @@ export const metadata: Metadata = {
   title: "All NonTech Posts",
   description: "blog posts not related to tech",
 };
-
-export default async function PostsPage() {
+async function FilterablePostsSection() {
   const posts = await getAllPosts(PostType.NONTECH);
   const categories = [...new Set(posts.flatMap((post) => post.tag))];
-
+  return <FilterablePosts posts={posts} categories={categories} />;
+}
+export default function PostsPage() {
   return (
     <div className={postPageStyle}>
       <div className={filterablePostsContainer}>
-        <FilterablePosts posts={posts} categories={categories} />
+        <FilterablePostsSection />
       </div>
     </div>
   );

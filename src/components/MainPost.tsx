@@ -1,18 +1,14 @@
-"use client";
 import Image from "next/image";
 import computer from "../../public/images/23.jpg";
 import React from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function MainPost() {
-  const router = useRouter();
-
-  const handleClick = () => {
-    router.push(`/posts-non-tech/how-i-got-into-programming`);
-  };
-
   return (
-    <section onClick={handleClick} className={mainPostStyle}>
+    <Link
+      href={"/posts-non-tech/how-i-got-into-programming"}
+      className={mainPostStyle}
+    >
       <div className={imageContainerStyle}>
         <div className={imageRowStyle}>
           <Image
@@ -37,7 +33,7 @@ export default function MainPost() {
       <div className={labelContainerStyle}>
         <div className={labelStyle}>FEATURED POST</div>
       </div>
-    </section>
+    </Link>
   );
 }
 

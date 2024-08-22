@@ -21,15 +21,14 @@ export async function generateMetadata({
   };
 }
 
-export default async function PostPage({ params: { slug } }: Props) {
+async function PostSection({ params: { slug } }: Props) {
   const post = await getPostData(slug, PostType.NONTECH);
   const { id, title, next, prev } = post;
   if (!title) {
     redirect("/posts-non-tech");
-    // notFound();
   }
   return (
-    <section className={sectionStyle}>
+    <>
       <div className={imageRowStyle}>
         <Image
           className="h-full"
@@ -41,6 +40,14 @@ export default async function PostPage({ params: { slug } }: Props) {
         />
       </div>
       <PostContent post={post} />
+    </>
+  );
+}
+
+export default function PostPage({ params }: Props) {
+  return (
+    <section className={sectionStyle}>
+      <PostSection params={params} />
     </section>
   );
 }

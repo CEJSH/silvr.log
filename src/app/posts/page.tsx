@@ -7,15 +7,17 @@ export const metadata: Metadata = {
   title: "All Posts",
   description: "blog posts related to development",
 };
-
-export default async function PostsPage() {
+async function FilterablePostsSection() {
   const posts = await getAllPosts(PostType.TECH);
   const categories = [...new Set(posts.flatMap((post) => post.tag))];
+  return <FilterablePosts posts={posts} categories={categories} />;
+}
 
+export default function PostsPage() {
   return (
     <div className={postPageStyle}>
       <div className={filterablePostsContainer}>
-        <FilterablePosts posts={posts} categories={categories} />
+        <FilterablePostsSection />
       </div>
     </div>
   );
