@@ -42,6 +42,7 @@ async function PostSection({ params: { slug } }: Props) {
     </>
   );
 }
+
 export default function PostPage({ params }: Props) {
   return (
     <section className={sectionStyle}>

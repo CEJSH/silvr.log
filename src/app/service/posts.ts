@@ -41,7 +41,7 @@ export const getAllPosts = cache(async (postType: PostType) => {
   return fs
     .readFile(filePath, "utf-8")
     .then<Post[]>(JSON.parse)
-    .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
+    .then((posts) => posts.sort((a, b) => (a.title < b.title ? -1 : 1)));
 });
 
 export async function getPost(

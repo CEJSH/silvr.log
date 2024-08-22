@@ -71,5 +71,15 @@
     "path": "immediately-invoked-function",
     "featured": true,
     "tag": ["javascript"]
+  },
+  {
+    "id": "25",
+    "date": "2024",
+    "title": "프로미스 패턴",
+    "description": "",
+    "image": "choco.jpeg",
+    "path": "promise-pattern",
+    "featured": true,
+    "tag": ["javascript"]
   }
 ]
